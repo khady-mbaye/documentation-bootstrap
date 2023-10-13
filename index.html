@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENTATION BOOTSTRAP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container pt-5">
+        <h1 class="text-center">La Class Container</h1>
+        <p>« Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna 
+        aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+        nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore 
+        eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum. »
+
+        </p>
+    </div>
+    <div class="container">
+        <h1 class="text-center">Les Grid in Bootstrap</h1>
+        <p>Le système de grille de Bootstrap propose 12 colonnes sur la page.</p>
+         <h2 class="text-center">Les regles </h2>
+         <ul>
+            <li>Les lignes doivent être placées dans une <span class="text-danger">.container</span>  ou <span class="text-danger">.container-fluid(pleine largeur)</span> pour un alignement et un remplissage corrects.</li>
+            <li>Utilisez des lignes pour créer des groupes horizontaux de colonnes</li>
+            <li>Le contenu doit être placé dans des colonnes et seules les colonnes peuvent être des enfants immédiats des lignes</li>
+            <li>Des classes prédéfinies comme <span class="text-danger">.row</span> et <span class="text-danger">.col-12 (pour lui demander de prendre les 12 colonnes) </span>sont disponibles pour créer rapidement des dispositions de grille</li>
+            <li>Les largeurs des colonnes sont en pourcentage, elles sont donc toujours fluides et dimensionnées par rapport à leur élément parent</li>
+         </ul>
+         <h3 class="text-underland">EX:</h3>
+        <div class="container">
+            <div class="row bg-light pb-5">
+              <div class="col ">
+                <div class="bg-info">1 of 3</div>
+              </div>
+              <div class="col-6">
+                <div class="bg-info">2 of 3 (wider)</div>
+              </div>
+              <div class="col ">
+                <div class="bg-info"> 3 of 3</div>
+              </div>
+            </div>
+            <div class="row bg-light">
+              <div class="col ">
+                <div class="bg-info"> 1 of 3</div>
+              </div>
+              <div class="col-5">
+               <div class="bg-info"> 2 of 3 (wider)</div>
+              </div>
+              <div class="col ">
+                <div class="bg-info">3 of 3</div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="container pt-5">
+        <h1 class="text-center">LES Tableaux en Bootstrap</h1>
+        <table class="table table-responsive">
+            <thead>
+              <tr class="table-info">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary">
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        <p>La class table-responsive affiche un scrool bar en bas lorsque la fenetre est petite</p>
+    </div>
+    <div class="container pt-5">
+        <h1 class="text-center">Les Figures en Bootstrap</h1>
+        <figure class="figure">
+            <img src="img.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
+          </figure>
+    </div>
+    <div class="container pt-5">
+        <h1 class="text-center">Typography en Bootstrap</h1>
+        <p>La taille de police globale par défaut de Bootstrap est de 14 px, avec une hauteur de ligne de 1,428.</p>
+        <h2>Couleurs et Arriere-Plans</h2>
+        <p>Les classes pour les couleurs du texte sont : .text-muted, .text-primary, .text-success, .text-info, .text-warninget.text-danger :</p>
+    </div>    
+    <div class="container pt-5">
+        <h1 class="text-center">Les Formulaires en Bootstrap</h1>
+        <h2><u>Validation</u></h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+
+
+          <h2 class="pt-3"><u>Form Controll</u></h2>
+          <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled> <br>
+           <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>      
+           <div class="my-3">
+            <label for="formFile" class="form-label">Ajouter un Ficher</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <label for="exampleDataList" class="form-label">Faite ton choix</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+            </datalist>
+            <h2><u>Forms</u></h2>
+            <h2 class="pt-3"><u>Imput de type RAdio in Bootstrap</u></h2>
+            <div class="form-check py-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+            </div>
+
+
+            <h2 class="pt-3"><u>checkbox in Bootstrap</u></h2>
+              <div class="form-check">
+                
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+              </div>
+              <h2 class="pt-3"><u>Range</u></h2>
+              <label for="customRange1" class="form-label">Example range</label>
+            <input type="range" class="form-range" id="customRange1">
+          
+
+    </div>
+    
+</body>
+</html>
